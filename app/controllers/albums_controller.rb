@@ -15,10 +15,12 @@ class AlbumsController < ApplicationController
   # GET /albums/new
   def new
     @album = Album.new
+    @artists = Artist.all
   end
 
   # GET /albums/1/edit
   def edit
+    @artists = Artist.all
   end
 
   # POST /albums
